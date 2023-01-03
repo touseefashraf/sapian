@@ -1,0 +1,65 @@
+.main-wrapper {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    background: url('/assets/backgrounds/bk_general.jpg') repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.cross {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    width: 40px;
+}
+.logo{
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 1vh;
+    display: block;
+    height: 14vh;
+}
+.heading{
+    text-align: center;
+    color: white;
+    font-size: 25px;
+    line-height: 5vh;
+    margin: 0.5vh 0;
+}
+.instructions{
+    font-family: 'Alegreya Sans',sans-serif;
+    font-weight: 700;
+    display: block;
+    margin: 0 15px;
+    margin-top: 1vh;
+    background-color: white;
+    opacity: 0.85;
+    border-radius: 15px;
+    padding: 0 13px;
+    text-align: center;
+    list-style: none;
+    max-height: 54vh;
+    overflow-y: auto;
+}
+.instructions li{
+    font-family: 'Alegreya Sans', sans-serif!important;
+    font-weight: 700;
+    font-size: 18px;
+    color: #6d0a19;
+}
+.comencar{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2vh;
+    width: min(280px, 80vw);
+    height: 14vh;
+    background-color: #0fe80f;
+    border-radius: 15px;
+    border: none;
+    color: white;
+    font-size: 24px;
+    letter-spacing: 6px;
+}
+

@@ -1,0 +1,32 @@
+<div class="main-wrapper">
+    <img src="/assets/logo/sapiens_logo.png" class="logo">
+    <div class="heading">
+        Com s’hi juga?
+
+    </div>
+    <div >
+        <ul class="instructions">
+            <li>
+                1.	Formeu dos equips.
+            </li>
+            <li>
+                2.	Cada equip ha de triar la persona que dirigeix les preguntes.
+            </li>
+            <li>
+                3.	L'encarregat de dirigir les preguntes de cada equip ha de llegir la pregunta en veu alta a l'altre equip.
+            </li>
+            <li>
+                4.	Cada pregunta encertada és 1 punt.
+            </li>
+            <li>
+                5.	Guanya la partida l'equip que obtingui més punts en acabar el joc.
+            </li>
+        </ul>
+
+    </div>
+
+    <button *ngIf="ds.maxPrizes > 0 && ds.totalPrizes > 0 else quiz" [routerLink]="['../instructions-two']" class="comencar">començar</button>
+    <ng-template #quiz>
+        <button [routerLink]="['../quiz']" class="comencar">començar</button>
+    </ng-template>
+</div>

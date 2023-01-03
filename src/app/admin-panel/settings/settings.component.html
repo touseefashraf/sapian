@@ -1,0 +1,41 @@
+<main>
+    <section class="register_holder">
+        <div class="container">
+            <div class="register_form login_form">
+                <h1 class="mb-2 text-center">Settings</h1>
+                <div class="alert alert-danger" role="alert" *ngIf="registrationError">
+                    {{registrationError}}
+                </div>
+
+                <form [formGroup]="settingsForm" (ngSubmit)="save(settingsForm)" #f="ngForm">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="form-group">
+                                <label>Questions Per Team</label>
+                                <input type="number" min="1" class="fadeIn" formControlName="questions_per_team" placeholder="Enter Questions Per Team">
+                                <div *ngIf="ui.checkErrors(g.questions_per_team, f)" class="errors">
+                                    <p *ngIf="g.questions_per_team.errors.required">Questions per team is required</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-12">
+                            <div class="form-group">
+                                <label>Max Prize Questions</label>
+                                <input type="number" min="0" class="fadeIn" formControlName="max_prize_questions" placeholder="Enter Max Prize Questions">
+                                <div *ngIf="ui.checkErrors(g.max_prize_questions, f)" class="errors">
+                                    <p *ngIf="g.max_prize_questions.errors.required">Max prize questions is required</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="col-md-12">
+                            <div class="form-group text-center">
+                                <input type="submit" value="Update">
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+</main>

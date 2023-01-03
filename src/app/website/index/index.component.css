@@ -1,0 +1,44 @@
+.main-wrapper {
+    width: 100%;
+    position: relative;
+    height: 100vh;
+    background: url('/assets/backgrounds/bk_general.jpg') repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.cross {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    width: 40px;
+}
+.logo{
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 1vh;
+    display: block;
+    height: 14vh;
+}
+.video{
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 10px;
+    display: block;
+    width: 35.43vh;
+    height: 62vh;
+}
+.comencar{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1vh;
+    width: 250px;
+    height: 14vh;
+    background-color: #0fe80f;
+    border-radius: 15px;
+    border: none;
+    color: white;
+    font-size: 24px;
+    letter-spacing: 6px;
+}

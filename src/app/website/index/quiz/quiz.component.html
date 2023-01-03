@@ -1,0 +1,219 @@
+<ng-container *ngIf="ds.questionsPerTeam > 0">
+    <div [ngClass]="ds.data.nextTeam=='teamA'?'teamA':'teamB'" *ngIf="step=='question'">
+        <div class="top-bar">
+            <img src="/assets/icons/icon_exit.png" class="cross" (click)="openModal(confirmation)">
+            <img src="/assets/logo/sapiens_logo.png" class="logo">
+        </div>
+
+        <div class="heading">
+            PReGunTA PeR <br>L'eQUIP <span *ngIf="ds.data.nextTeam=='teamA'">1</span><span *ngIf="ds.data.nextTeam=='teamB'">2</span>
+            <!-- Question For <br> Team 1 -->
+        </div>
+        <div class="instructions">
+            <p>{{ ds.data[ds.data.nextTeam].questions[ds.data[ds.data.nextTeam].nextQuestion].question }}</p>
+
+        </div>
+        <button (click)="step='answer'" class="comencar">veuRe ReSPoSTA!</button>
+        <div class="equip">
+            <button class="equip-btn">
+                <p>Equip 1</p>
+                <p>{{ds.data.teamA.score}}</p>
+
+            </button>
+            <button style="background-color: #ff7c0c;" class="equip-btn">
+                <p>Equip 2</p>
+                <p>{{ds.data.teamB.score}}</p>
+
+            </button>
+        </div>
+    </div>
+
+    <div [ngClass]="ds.data.nextTeam=='teamA'?'teamA':'teamB'" *ngIf="step=='answer'">
+        <div class="top-bar">
+            <img src="/assets/icons/icon_exit.png" class="cross" (click)="openModal(confirmation)">
+            <img src="/assets/logo/sapiens_logo.png" class="logo">
+        </div>
+        <div class="heading">
+            RESPoSTA
+
+        </div>
+        <div class="instructions-answer">
+            <p>
+                {{ ds.data[ds.data.nextTeam].questions[ds.data[ds.data.nextTeam].nextQuestion].answer }}
+            </p>
+
+        </div>
+        <div class="comencar-answer" (click)="answer('correct')">
+            <p style="color: #93b50c;">Correcta</p>
+            <img src="/assets/icons/icon_correct.png" class="correct-answer">
+
+        </div>
+        <div class="comencar-answer" (click)="answer('in-correct')">
+            <p style="color:#f43145">Incorrecta</p>
+            <img src="/assets/icons/icon_incorrect.png" class="correct-answer">
+
+        </div>
+        <div class="equip-answer">
+            <button class="equip-btn-answer">
+                <p>Equip 1</p>
+                <p>{{ds.data.teamA.score}}</p>
+
+            </button>
+            <button style="background-color: #ff7c0c;" class="equip-btn">
+                <p>Equip 2</p>
+                <p>{{ds.data.teamB.score}}</p>
+
+            </button>
+        </div>
+    </div>
+
+
+    <div class="main-wrapper" *ngIf="step=='result'">
+        <div class="top-bar">
+            <!-- <img src="/assets/icons/icon_exit.png" class="cross" (click)="openModal(confirmation)"> -->
+            <img src="/assets/logo/sapiens_logo.png" class="logo">
+        </div>
+
+        <div class="heading">
+            <p>Resultat</p>
+        </div>
+
+        <div class="equip result">
+            <button class="equip-btn">
+                <p>Equip 1</p>
+                <p>{{ds.data.teamA.score}}</p>
+
+            </button>
+            <button style="background-color: #ff7c0c;" class="equip-btn">
+                <p>Equip 2</p>
+                <p>{{ds.data.teamB.score}}</p>
+            </button>
+        </div>
+
+        <p class="result-text" *ngIf="ds.data.teamA.score > ds.data.teamB.score">Enhorabona a l’Equip 1!</p>
+        <p class="result-text" *ngIf="ds.data.teamA.score < ds.data.teamB.score">Enhorabona a l’Equip 2!</p>
+        <p class="result-text" *ngIf="ds.data.teamA.score == ds.data.teamB.score">S’ha produït un empat, torneu a jugar per desempatar!</p>
+
+        <button class="result-button" type="button" (click)="goto()">Torna a jugar</button>
+        <a href="https://wa.me/?text={{appLink}}" style="text-decoration: none;">
+            <button class="result-button mt-2" type="button">Comparteix el joc</button>
+        </a>
+    </div>
+
+    <div class="main-wrapper-quiz" *ngIf="step=='quiz'">
+        <div class="top-bar">
+            <div class="quiz-timer">
+                <img src="/assets/icons/icon_timer.svg">
+                <p class="prize-counter">{{prizeCounter}}</p>
+            </div>
+            <img src="/assets/icons/icon_exit.png" class="cross" (click)="openModal(confirmation)">
+            <img src="/assets/logo/sapiens_logo.png" class="logo">
+        </div>
+        <div class="heading">Pregunta amb premi</div>
+        <div>
+            <ul class="instructions prize-main">
+                <li class="prize-main-li">
+                    {{ ds.prizeQuestions[this.ds.prizeIndex].question }}
+                </li>
+            </ul>
+
+            <ul class="instructions prize-li" (click)="quizAnswer(ds.prizeQuestions[ds.prizeIndex].option1)">
+                <li>
+                    {{ ds.prizeQuestions[ds.prizeIndex].option1 }}
+                </li>
+            </ul>
+
+            <ul class="instructions prize-li" (click)="quizAnswer(ds.prizeQuestions[ds.prizeIndex].option2)">
+                <li>
+                    {{ ds.prizeQuestions[ds.prizeIndex].option2 }}
+                </li>
+            </ul>
+
+            <ul class="instructions prize-li" (click)="quizAnswer(ds.prizeQuestions[ds.prizeIndex].option3)">
+                <li>
+                    {{ ds.prizeQuestions[ds.prizeIndex].option3 }}
+                </li>
+            </ul>
+
+            <ul class="instructions prize-li" (click)="quizAnswer(ds.prizeQuestions[ds.prizeIndex].option4)">
+                <li>
+                    {{ ds.prizeQuestions[ds.prizeIndex].option4 }}
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="main-wrapper-quiz" *ngIf="step=='quiz-answer'">
+        <div class="top-bar">
+            <img src="/assets/icons/icon_exit.png" class="cross" (click)="openModal(confirmation)">
+            <img src="/assets/logo/sapiens_logo.png" class="logo">
+        </div>
+        <ng-container *ngIf="quizResult">
+            <div class="heading">
+                FELICITATS!
+            </div>
+
+            <div class="prize-success">
+                <ul class="instructions">
+                    <li>
+                        Acabes de guanyar un
+                        <ng-container *ngIf="loading==false">S'està carregant...</ng-container>
+                        <ng-container *ngIf="loading">{{prizeName}}!</ng-container>
+                    </li>
+                    <li>
+                        <img src="/assets/icons/icon_prize.svg" class="prize-icon">
+                    </li>
+                    <li>
+                        Introdueix el teu nom i email per gestionar-ho
+                    </li>
+                </ul>
+                <form [formGroup]="prizeForm" (ngSubmit)="save(prizeForm, f)" #f="ngForm">
+                    <ul class="instructions instructions-margin">
+                        <li>
+                            <input formControlName="name" class="form-control input-text" placeholder="Nom" [ngClass]="{'form-submitted': f.submitted}">
+                        </li>
+                    </ul>
+                    <ul class="instructions instructions-margin">
+                        <li>
+                            <input formControlName="email" class="form-control input-text" placeholder="Email" [ngClass]="{'form-submitted': f.submitted}">
+                        </li>
+                    </ul>
+
+                    <button *ngIf="submiteEmail==false" class="comencar" type="submit">enviar</button>
+                    <button *ngIf="submiteEmail" class="sending" type="button">S'està enviant ...</button>
+                </form>
+            </div>
+
+        </ng-container>
+        <ng-container *ngIf="quizResult==false">
+            <div class="heading">
+                Llàstima!
+            </div>
+            <div class="prize-not-success">
+                <ul class="instructions prize-fail-padding">
+                    <li>
+                        Aquest cop no has encertat, però segueix jugant per poder guanyar més productes Valero
+                    </li>
+                    <li>
+                        <img src="/assets/icons/icon_prize.svg" class="prize-icon">
+                    </li>
+
+                </ul>
+
+                <button class="comencar" (click)="step='question'">Continuar jugant</button>
+            </div>
+        </ng-container>
+    </div>
+</ng-container>
+
+<ng-template #confirmation>
+    <div class="modal-content">
+        <div class="modal-body">
+            <p class="p-color">Segur que vols finalitzar el joc?</p>
+            <div class="text-right">
+                <button class="sm black mr-1" (click)="modalRef.hide()">No</button>
+                <button class="sm red" (click)="quite()">Sí</button>
+            </div>
+        </div>
+    </div>
+</ng-template>

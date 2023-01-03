@@ -1,0 +1,61 @@
+<div class="main-wrapper-quiz">
+    <div class="top-bar">
+        <!-- <img src="/assets/icons/icon_exit.png" class="cross" (click)="openModal(confirmation)"> -->
+        <img src="/assets/logo/sapiens_logo.png" class="logo">
+    </div>
+    <ng-container *ngIf="!thanks">
+        <div class="heading">FELICITATS {{username}}!</div>
+
+        <div class="prize-success">
+            <ul class="instructions">
+
+                <li>
+                    Has guanyat un dels premis del nostre joc Sàpiens. Indica’ns si us plau a quina de les nostres botigues vols recollir el teu premi:
+                </li>
+
+            </ul>
+            <form [formGroup]="prizeForm" (ngSubmit)="save(prizeForm, f)" #f="ngForm">
+                <ul class="instructions instructions-margin">
+                    <li>
+                        <select formControlName="city_id" class="input-text form-control" style="border:none; width:100%;" [ngClass]="{'form-submitted': f.submitted}" (change)="getStores($event)">
+                            <option [value]="null">Triar Població</option>
+                            <option *ngFor="let d of listCity" [value]="d.id">{{d.name}}</option>
+                        </select>
+                    </li>
+                </ul>
+
+                <ul class="instructions instructions-margin">
+                    <li>
+                        <select formControlName="store_id" class="input-text form-control" style="border:none; width:100%;" [ngClass]="{'form-submitted': f.submitted}">
+                            <option [value]="null">Triar Botiga</option>
+                            <ng-container *ngIf="stores.length > 0">
+                                <option *ngFor="let d of stores" [value]="d.id">{{d.address}}</option>
+                            </ng-container>
+                        </select>
+                    </li>
+                </ul>
+                <!-- <ul class="instructions instructions-margin">
+                    <li class="mb-2 text-left">Moltes gràcies per jugar amb nosaltres!</li>
+                </ul> -->
+                <button *ngIf="submiteEmail==false" class="comencar" type="submit">enviar</button>
+                <button *ngIf="submiteEmail" class="sending" type="button">S'està enviant ...</button>
+            </form>
+        </div>
+
+    </ng-container>
+
+    <ng-container *ngIf="thanks">
+        <h1 class="thanks">MOLTES GRÀCIES PER JUGAR AMB NOSALTRES!</h1>
+    </ng-container>
+</div>
+<ng-template #confirmation>
+    <div class="modal-content">
+        <div class="modal-body">
+            <p class="p-color">¿Estás seguro de dejar de fumar?</p>
+            <div class="text-right">
+                <button class="sm black mr-1" (click)="modalRef.hide()">No</button>
+                <button class="sm red" (click)="quite()">Si</button>
+            </div>
+        </div>
+    </div>
+</ng-template>

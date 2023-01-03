@@ -1,0 +1,310 @@
+.main-wrapper {
+    width: 100%;
+    height: 100vh;
+    background: url('/assets/backgrounds/bk_general.jpg') repeat;
+    background-size: cover;
+    /* background-position: center; */
+}
+.top-bar {
+    text-align: center;
+    width: 100%;
+    margin: auto;
+    position: relative;
+}
+.cross {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 50px;
+}
+.logo{
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 1vh;
+    display: block;
+    height: 20vh;
+}
+.heading{
+    text-align: center;
+    color: white;
+    font-size: 3.4vh;
+    margin: 1vh 0;
+    letter-spacing: 2px;
+    max-height: 12vh;
+    overflow-y: auto;
+}
+.instructions-margin {
+    margin-top: 2vh !important;
+}
+.instructions{
+    display: block;
+    margin: 0px 15px;
+    background-color: white;
+    opacity: 0.85;
+    border-radius: 8px;
+    color: #420015;
+    padding: 0 13px;
+    text-align: center;
+    list-style: none;
+    max-height: 38vh;
+    min-height: 34vh;
+    overflow-y: auto;
+}
+.main-wrapper-quiz .instructions {
+    min-height: auto;
+}
+.instructions select, .instructions li{
+    font-family: 'Alegreya Sans', sans-serif!important;
+    font-weight: 700;
+    font-size: 18px;
+}
+.instructions p{
+    font-family: 'Alegreya Sans', sans-serif!important;
+    font-weight: 900;
+    font-size: 2.8vh;
+    line-height: 1.4;
+    padding: 1.5vh 0;
+}
+.comencar{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2vh;
+    width: min(280px, 80vw);
+    height: 10vh;
+    background-color: #0fe80f;
+    border-radius: 15px;
+    border: none;
+    color: white;
+    font-size: 20px;
+    letter-spacing: 2px;
+}
+.sending{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    width: min(280px, 80vw);
+    height: 10vh;
+    background-color: #A82222;
+    border-radius: 15px;
+    border: none;
+    color: white;
+    font-size: 20px;
+    letter-spacing: 2px;
+}
+.equip{
+    display: flex;
+    justify-content: space-evenly;
+    width: 85%;
+    position: fixed;
+    bottom: 2vh;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.equip-btn{
+    width: 112px;
+    height: 11vh;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 7px;
+    background-color: #6f0015;
+}
+.equip-btn p:nth-child(1){
+    font-family: 'Alegreya Sans', sans-serif!important;
+    font-size: 23px;
+    margin: 0;
+    margin-top: -3px;
+}
+.equip-btn p:nth-child(2){
+    font-size: 28px;
+    margin: 0;
+    margin-top: -13px;
+}
+
+
+.main-wrapper-answer {
+    width: 100%;
+    height: 100vh;
+    background-image: url('/assets/backgrounds/bk_general.jpg');
+    background-size: cover;
+    /* background-position: center; */
+}
+.teamA {
+    width: 100%;
+    height: 100vh;
+    background-image: url('/assets/backgrounds/bk_general.jpg');
+    background-size: cover;
+    /* background-position: center; */
+}
+.teamB {
+    width: 100%;
+    height: 100vh;
+    background-image: url('/assets/backgrounds/bk_general.jpg');
+    background-size: cover;
+    background-position:right;
+}
+.instructions-answer{
+    display: block;
+    margin: 0px 15px;
+    background-color: white;
+    opacity: 0.85;
+    border-radius: 15px;
+    color: #420015;
+    padding: 0 13px;
+    text-align: center;
+    list-style: none;
+    max-height: 38vh;
+    min-height: 34vh;
+    overflow-y: auto;
+}
+.instructions-answer p{
+    font-family: 'Alegreya Sans', sans-serif!important;
+    font-weight: 900;
+    font-size: 2.8vh;
+    line-height: 1.4;
+    padding: 12px 0
+}
+
+.comencar-answer{
+    display: flex;
+    justify-content: space-evenly;
+    margin: 0px 15px;
+    background-color: white;
+    opacity: 0.85;
+    border-radius: 15px;
+    color: #420015;
+    padding: 0 13px;
+    text-align: center;
+    list-style: none;
+    overflow-y: auto;
+    margin-top: 3vh;
+}
+.comencar-answer p{
+    font-family: 'Alegreya Sans', sans-serif!important;
+    font-size: 32px;
+    font-weight: 800;
+    margin: 0;
+}
+.correct-answer{
+    display: flex;
+    align-self: center;
+    width: 5vh;
+    height: 5vh;
+}
+.equip-answer{
+    display: flex;
+    justify-content: space-evenly;
+    width: 85%;
+    position: fixed;
+    bottom: 2vh;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.equip-btn-answer{
+    width: 112px;
+    height: 11vh;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 7px;
+    background-color: #6f0015;
+}
+.equip-btn-answer p:nth-child(1){
+    font-family: 'Alegreya Sans', sans-serif!important;
+    font-size: 23px;
+    margin: 0;
+    margin-top: -3px;
+}
+.equip-btn-answer p:nth-child(2){
+    font-size: 28px;
+    margin: 0;
+    margin-top: -13px;
+}
+.main-wrapper-quiz {
+    width: 100%;
+    height: 100vh;
+    background-image: url('/assets/backgrounds/bk_general.jpg');
+    background-size: cover;
+}
+.prize-main {
+    margin-bottom: 5vh;
+    min-height: 15vh !important;
+    max-height: 20vh !important;
+}
+.prize-main-li {
+    margin-top: 1vh;
+}
+.prize-li {
+    margin-top: 2vh;
+    padding-top: 2vh;
+    padding-bottom: 2vh;
+}
+.prize-icon {
+    width: 15vh;
+}
+.form-control {
+    border: 0;
+    color: #6f0015;
+    text-align: center;
+}
+
+.form-control:focus {
+    outline: none !important;
+    color: #6f0015;
+    border: 0;
+    box-shadow: none;
+}
+.input-text {
+    outline: none !important;
+    box-shadow: none;
+}
+.error {
+    font-size: 15px;
+    font-weight: normal;
+}
+
+button.sm {
+    padding: 4px 16px;
+    border-radius: 15px;
+    text-transform: initial;
+    font-size: 14px;
+    padding-top: 3px;
+    color: #fff;
+    border: none;
+}
+
+button.red {
+    background: #2edc0e;
+}
+
+button.black {
+    background: black;
+}
+.p-color {
+    font-family: 'Alegreya Sans', sans-serif!important;
+    font-weight: 900;
+    font-size: 15px;
+    line-height: 1.4;
+    color: #420015;
+}
+.result-button {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: min(280px, 80vw);
+    height: 10vh;
+    background-color: #0fe80f;
+    border-radius: 15px;
+    border: none;
+    color: white;
+    font-size: 20px;
+    letter-spacing: 2px;
+}
+h1.thanks {
+    text-align: center;
+    color: #fff;
+    margin-top: 18vh;
+    font-size: 36px;
+}

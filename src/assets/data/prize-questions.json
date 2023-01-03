@@ -1,0 +1,258 @@
+[
+    {
+        "question": "Quants tentacles té un calamar?",
+        "option1": "4",
+        "option2": "8",
+        "option3": "10",
+        "option4": "20",
+        "answer": "8"
+    },
+    {
+        "question": "Aproximadament, quin percentatge de la superfície de la Terra és aigua?",
+        "option1": "10",
+        "option2": "50",
+        "option3": "70",
+        "option4": "90",
+        "answer": "70"
+    },
+    {
+        "question": "Quin és l'idioma oficial del Brasil?",
+        "option1": "Brasiler",
+        "option2": "Francès",
+        "option3": "Anglès ",
+        "option4": "Portuguès ",
+        "answer": "Portuguès "
+    },
+    {
+        "question": "Quin any va morir Bob Marley?",
+        "option1": "1981",
+        "option2": "1986",
+        "option3": "1991",
+        "option4": "2003",
+        "answer": "1981"
+    },
+    {
+        "question": "Quin nom rep l’«estri» necessari per a jugar al billar?",
+        "option1": "Pal",
+        "option2": "Snooker",
+        "option3": "Bubingo",
+        "option4": "Tac ",
+        "answer": "Tac "
+    },
+    {
+        "question": "Quin és l'estat estatunidenc que està més a prop de Rússia?",
+        "option1": "Alaska ",
+        "option2": "Califòrnia",
+        "option3": "Florida",
+        "option4": "Texas",
+        "answer": "Alaska "
+    },
+    {
+        "question": "Quin òrgan del cos produeix la insulina?",
+        "option1": "El pàncrees ",
+        "option2": "El fetge",
+        "option3": "La melsa",
+        "option4": "El tim",
+        "answer": "El pàncrees "
+    },
+    {
+        "question": "Què significa 'ser coetani'?",
+        "option1": "Ser familiar directe",
+        "option2": "Compartir professió",
+        "option3": "Viure en una mateixa època",
+        "option4": "Néixer el mateix any",
+        "answer": "Viure en una mateixa època"
+    },
+    {
+        "question": "Quantes meravelles del món antic hi havia?",
+        "option1": "10",
+        "option2": "7",
+        "option3": "12",
+        "option4": "15",
+        "answer": "7"
+    },
+    {
+        "question": "Qui va dirigir la pel·lícula «L'apartament»?",
+        "option1": "Billy Wilder ",
+        "option2": "Orson Welles",
+        "option3": "Woody Allen",
+        "option4": "Alfred Hitchcock",
+        "answer": "Billy Wilder "
+    },
+    {
+        "question": "Quin d'aquests invents es va crear primer?",
+        "option1": "Electricitat",
+        "option2": "Dinamita ",
+        "option3": "Bicicleta",
+        "option4": "Automòbil",
+        "answer": "Dinamita "
+    },
+    {
+        "question": "Quina és la ciutat més poblada del món?",
+        "option1": "Buenos Aires",
+        "option2": "Ciutat de Mèxic",
+        "option3": "Nova York",
+        "option4": "Tòquio ",
+        "answer": "Tòquio "
+    },
+    {
+        "question": "Quin és el nom més comú al món?",
+        "option1": "George",
+        "option2": "Juan",
+        "option3": "Mohamed ",
+        "option4": "Peter",
+        "answer": "Mohamed "
+    },
+    {
+        "question": "Quina ciutat dels Estats Units té més cotxes que gent?",
+        "option1": "Los Angeles ",
+        "option2": "Chicago",
+        "option3": "Detroit",
+        "option4": "Nova York",
+        "answer": "Los Angeles "
+    },
+    {
+        "question": "Quin és l'únic animal que té quatre genolls?",
+        "option1": "L'elefant ",
+        "option2": "El gos",
+        "option3": "El cavall",
+        "option4": "El gat",
+        "answer": "L'elefant "
+    },
+    {
+        "question": "Què estudia la sismologia?",
+        "option1": "Pedres precioses",
+        "option2": "Terratrèmols ",
+        "option3": "Núvols",
+        "option4": "Animals extingits",
+        "answer": "Terratrèmols "
+    },
+    {
+        "question": "Quin d'aquests minerals és el més dur de la Terra?",
+        "option1": "Plata",
+        "option2": "Plom ",
+        "option3": "Diamant ",
+        "option4": "Titani",
+        "answer": "Diamant "
+    },
+    {
+        "question": "Quin heroi fantàstic podries trobar al carreró Diagon?",
+        "option1": "Tris Prior",
+        "option2": "Harry Potter ",
+        "option3": "Percy Jackson",
+        "option4": "Katniss Everdeen",
+        "answer": "Harry Potter "
+    },
+    {
+        "question": "D'on és el plat típic anomenat «Ropa vieja»?",
+        "option1": "Argentina",
+        "option2": "San Marino",
+        "option3": "Cuba ",
+        "option4": "Espanya",
+        "answer": "Cuba "
+    },
+    {
+        "question": "Qui va escriure el guió de la premiada pel·lícula «Rocky», de 1976?",
+        "option1": "Peter Bogdanovich",
+        "option2": "George Lucas",
+        "option3": "William Goldman",
+        "option4": "Sylvester Stallone ",
+        "answer": "Sylvester Stallone "
+    },
+    {
+        "question": "On van ser enviades les sondes espacials de la NASA, Viking I II?",
+        "option1": "Júpiter",
+        "option2": "Mart ",
+        "option3": "Lluna",
+        "option4": "Orió",
+        "answer": "Mart "
+    },
+    {
+        "question": "Quin any es va fundar el CE Sabadell?",
+        "option1": "1898",
+        "option2": "1903 ",
+        "option3": "1956",
+        "option4": "1974",
+        "answer": "1903 "
+    },
+    {
+        "question": "Quina religió fa servir el concepte de Nirvana?",
+        "option1": "Budisme ",
+        "option2": "Judaisme",
+        "option3": "Jainisme",
+        "option4": "Cristianisme",
+        "answer": "Budisme "
+    },
+    {
+        "question": "Quina part del veler s'usa per a canviar el rumb?",
+        "option1": "La brúixola",
+        "option2": "El timó ",
+        "option3": "El casc",
+        "option4": "Les veles",
+        "answer": "El timó "
+    },
+    {
+        "question": "Contra qui es va postular Bill Clinton en les eleccions presidencials de 1996?",
+        "option1": "Bob Dole ",
+        "option2": "John McCain",
+        "option3": "Elizabeth Dole",
+        "option4": "George W. Bush",
+        "answer": "Bob Dole "
+    },
+    {
+        "question": "Quin color tenen el 75% de les banderes del món?",
+        "option1": "Blau",
+        "option2": "Vermell ",
+        "option3": "Verd ",
+        "option4": "Groc",
+        "answer": "Vermell "
+    },
+    {
+        "question": "Qui van ser jutjats en els judicis de Nuremberg ?",
+        "option1": "Les bruixes condemnades",
+        "option2": "Delinqüents de la dècada dels 20",
+        "option3": "Els nazis ",
+        "option4": "Enemics soviètics",
+        "answer": "Els nazis "
+    },
+    {
+        "question": "A quin país es lliura el Premi Nobel?",
+        "option1": "Alemanya",
+        "option2": "Hongria",
+        "option3": "Suècia ",
+        "option4": "França",
+        "answer": "Suècia "
+    },
+    {
+        "question": "Qui va ser l'arquitecte del Gran Teatre del Liceu?",
+        "option1": "Josep Puig i Cadafalch",
+        "option2": "Antoni Gaudí i Cornet",
+        "option3": "Lluís Domènech i Montaner",
+        "option4": "Miquel Garriga i Roca ",
+        "answer": "Miquel Garriga i Roca "
+    },
+    {
+        "question": "Quina és la nació més petita en el món?",
+        "option1": "Andorra",
+        "option2": "El Vaticà ",
+        "option3": "Mònaco",
+        "option4": "Liechtenstein",
+        "answer": "El Vaticà "
+    },
+    {
+        "question": "De quin personatge fictici estava enamorat Tirant lo Blanc?",
+        "option1": "Celestina",
+        "option2": "Carmesina",
+        "option3": "Estefania",
+        "option4": "Plaerdemavida",
+        "answer": "Carmesina"
+    },
+    {
+        "question": "A quina ciutat catalana es troba la colonia Güell?",
+        "option1": "Barcelona",
+        "option2": "Sabadell",
+        "option3": "Sitges",
+        "option4": "Santa Coloma de Cervelló",
+        "answer": "Santa Coloma de Cervelló"
+    }
+]

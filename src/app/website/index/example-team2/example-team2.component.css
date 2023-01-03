@@ -1,0 +1,91 @@
+.main-wrapper {
+    width: 100%;
+    height: 100vh;
+    background-image: url('/assets/backgrounds/bk_general.jpg');
+    background-size: cover;
+    background-position:right;
+}
+
+.cross {
+    position: fixed;
+    top: 5px;
+    right: 500px;
+    width: 50px;
+}
+.logo{
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 12px;
+    display: block;
+    width: 130px;
+}
+.heading{
+    text-align: center;
+    color: white;
+    font-size: 25px;
+    margin: 8px 0;
+
+}
+.instructions{
+
+    margin-left: auto;
+    margin-right: auto;
+    margin: 0 auto;
+    display: block;
+    width: 280px;
+    background-color: white;
+    opacity: 0.85;
+    border-radius: 15px;
+    color:#6f0015;
+    padding: 0 13px;
+    text-align: center;
+    list-style: none;
+}
+.instructions p{
+    font-family: 'Alegreya Sans', sans-serif!important;
+    font-weight: 900;
+    font-size: 24px;
+    line-height: 1.4;
+    padding: 10px 0;
+}
+.comencar{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    width: 280px;
+    height: 80px;
+    background-color: #2edc0e;
+    border-radius: 15px;
+    border: none;
+    color: white;
+    font-size: 26px;
+    /* letter-spacing: 6px; */
+}
+.equip{
+    display: flex;
+    justify-content: space-between;
+    width: 75%;
+    margin: 28px auto 0 auto;
+}
+.equip-btn{
+    width: 112px;
+    height: 67px;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 7px;
+    background-color: #6f0015;
+}
+.equip-btn p:nth-child(1){
+    font-family: 'Alegreya Sans', sans-serif!important;
+    font-size: 23px;
+    margin: 0;
+    margin-top: -3px;
+}
+.equip-btn p:nth-child(2){
+    font-size: 28px;
+    margin: 0;
+    margin-top: -13px;
+}
+
